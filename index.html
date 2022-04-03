@@ -5,105 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irina's resume</title>
-    <meta name="keywords" content="html css work practice Irina SV Resume">
-    <meta name="description" content="Это сайт с резюме Ирины">
+    <meta name="keywords" content="html css work practice Irina Akhanteva SV Resume">
+    <meta name="description" content="Это сайт с резюме Ирины Ахантьевой">
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body>
-   
-<img src="Photo_CV.jpg" width="150" alt="Фотография Ирины Ахантьевой">
+  <body>
 
-  <h1>Ирина Ахантьева</h1>  
+  <div class="container">
+      
+    <div class="info">
+      <img src="Photo_CV.jpg" alt="Фотография Ирины Ахантьевой" class="avatar">
+      
+      <div class="info-text">
+        <h1>Ирина Ахантьева</h1>
+      
+        <p>Я <strong>инженер-прочнист</strong> в крупной компании и хочу развивать себя в сфере <strong>программирования</strong>.</p>
+      
+      <p>Я увлекаюсь <em>психологией</em>, люблю заниматься <em>спортом</em>  и обожаю изучать что-то <em>новое</em>. </p>
+    
+      
+        <h3>Список социальных сетей</h3>
+      
+        <button class="btn-1">
+          <a href="https://web.telegram.org" target="_blanc">Telegram</a>
+        </button>
+        
+        <button class="btn-1">
+          <a href="https://m.vk.com/iriskayashina" target="_blanc">ВКонтакте</a>
+        </button>
+      </div>
+      
+    </div>
 
-<p>Я <strong>инженер-прочнист</strong> в крупной компании и хочу развивать себя в сфере <strong>программирования</strong>.</p>
-   
-<p>Я увлекаюсь <em>психологией</em>, люблю заниматься <em>спортом</em>  и обожаю изучать что-то <em>новое</em>. </p>
+      <div class="card card-1">
+        <h3>Мои хобби</h3>
+      
+        <ul class="list">
+          <li>Путешестия</li>
+          <li>Психология</li>
+          <li>Спорт</li>
+          <li>Музыка</li>
+        </ul>
+      </div>
+      
+      <div class="card card-2">
+        <h3>Опыт работы</h3>
+      
+        <table class="table">
+        
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          
+          </thead> -->
+          
+          <tbody>
+            <tr>
+              <td>Ренессанс страхование</td>
+              <td>Специалист по работе с клиентами</td>
+              <td>2013-2015</td>
+            </tr>
+        
+            <tr>
+              <td>Ренессанс страхование</td>
+              <td>Специалист по работе с партнерами</td>
+              <td>2015-2016</td>
+            </tr>
+        
+            <tr>
+              <td>Смартек</td>
+              <td>Младший инженер</td>
+              <td>2016-2017</td>
+            </tr>
+        
+            <tr>
+              <td>Смартек</td>
+              <td>Инженер</td>
+              <td>2017-по настоящее время</td>
+            </tr>
+        
+          </tbody>
+        
+        </table>
+      </div>
 
-<!--<p><strong>Список социальных сетей</strong></p>-->
+    <div>
 
-<h3>Список социальных сетей</h3>
+      <form class="form" action="/">
+      
+        <h3>Связаться со мной</h3>
 
-<a href="https://web.telegram.org" target="_blanc">Telegram</a>
-|
-<a href="https://m.vk.com/iriskayashina" target="_blanc">ВКонтакте</a>
+        <div class="form-row">
+          <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Введите имя">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" placeholder="Введите email">
+          </div>
+        </div>
 
-<!--<p><strong>Мои хобби</strong></p>-->
+      <div class="form-group">
+        <label for="message">Ваше сообщение</label>
+        <br>
+      <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Отправить</button>
+      </form>
+      
+      </div>
 
-<h3>Мои хобби</h3>
-
-<ul>
-  <li>Путешестия</li>
-  <li>Психология</li>
-  <li>Спорт</li>
-  <li>Литература</li>
-  <li>Музыка</li>
-</ul>
-
-<!--<p><strong>Опыт работы</strong></p>-->
-
-<h3>Опыт работы</h3>
-
-<table>
-
-  <thead>
-    <tr>
-      <th>Название работы</th>
-      <th>Должность</th>
-      <th>Год</th>
-    </tr>
-   
-  </thead>
-  
-  <tbody>
-    <tr>
-      <td>Ренессанс страхование</td>
-      <td>Специалист по работе с клиентами</td>
-      <td>2013-2015</td>
-    </tr>
-
-    <tr>
-      <td>Ренессанс страхование</td>
-      <td>Специалист по работе с партнерами</td>
-      <td>2015-2016</td>
-    </tr>
-
-    <tr>
-      <td>Смартек</td>
-      <td>Младший инженер</td>
-      <td>2016-2017</td>
-    </tr>
-
-    <tr>
-      <td>Смартек</td>
-      <td>Инженер</td>
-      <td>2017-по настоящее время</td>
-    </tr>
-
-  </tbody>
-
-</table>
-
-<h3>Связаться со мной</h3>
-
-<form>
-
-<div>
-<label for="name">Ваше имя</label>
-<input type="text" id="name" placeholder="Введите имя">
-</div>
-
-<div>
-  <label for="email">Ваш email</label>
-  <input type="email" id="email" placeholder="Введите email">
-</div>
-  
-<div>
-  <label for="message">Ваше сообщение</label>
-  <br>
-<textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-</div>
-
-<button type="submit">Отправить</button>
-</form>
+  </div>
 
 </body>
 </html>
